@@ -1,10 +1,10 @@
 import './App.css';
-import ColorButton from './components/ColorButton'
+import ButtonView from './components/ButtonView'
 
 function App() {
   return (
     <>
-      <ColorButton />
+      <ButtonView />
     </>
   )
 }
