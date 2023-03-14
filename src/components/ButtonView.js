@@ -1,11 +1,10 @@
-import { useState } from "react"
 import Radiobutton from "./Radiobutton"
 
 const colors = [
-    'red',
-    'blue',
-    'green',
-    'yellow'
+    'peer-checked:bg-red-500',
+    'peer-checked:bg-blue-500',
+    'peer-checked:bg-green-500',
+    'peer-checked:bg-yellow-500',
 ]
 
 export default function ButtonView () {
