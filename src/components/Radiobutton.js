@@ -5,6 +5,11 @@ export default function Radiobutton(props) {
         index,
         text,
         ischecked,
+        size,
+        borderColor,
+        borderHoverColor,
+        textSize,
+        borderPeerChecked,
         handleChange
     } = props
 
@@ -12,8 +17,8 @@ export default function Radiobutton(props) {
     return <>
         <div>
             <input type='radio' id={index} name={name} className="peer hidden" checked={!!ischecked} onChange={() => handleChange()}/>
-            <label for={index} className={`bg-white flex items-center justify-center rounded-full h-[100px] w-[100px] p-2 hover:border-indigo-500/100 hover:border-2 border-gray-300 border-2 ${color} peer-checked:border-indigo-500  peer-checked:border-2 `}>
-                <div className="text-center">{text}</div>
+            <label for={index} className={`bg-white flex items-center justify-center rounded-full ${size} p-2 ${borderColor} border-2 ${borderHoverColor}  hover:border-2 ${color} ${borderPeerChecked} peer-checked:border-2 `}>
+                <div className= {`text-center ${textSize}`} >{text}</div>
             </label>
         </div>
     </>
